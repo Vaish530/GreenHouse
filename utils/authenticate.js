@@ -1,7 +1,9 @@
 import jwt from "jsonwebtoken";
 import User from "../models/signup.js";
 
-const JWT_SECRET="99491384";
+const JWT_SECRET="repalce with your secret code "
+
+
 export async function generateTokenForUser(id){
   const user=await User.findById(id);
   const payload={
