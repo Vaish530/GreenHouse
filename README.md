@@ -1,12 +1,71 @@
-# React + Vite
+ GreenHouse
+GreenHouse is a MERN stack e-commerce web app for selling plants online. Users can browse products, add them to cart, contact support, and place inquiries/bulk orders. Includes user authentication and an admin panel for managing products.
+Technologies used:
+*Frontend: React.js, Bootstrap
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+*Backend: Node.js, Express.js
 
-Currently, two official plugins are available:
+*Database: MongoDB (Mongoose)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*Auth: JWT
+ Features
+ *User Signup/Login (JWT-based)
 
-## Expanding the ESLint configuration
+*Product List (Plants)
+* Add to Cart
+* Cart Component
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Articles Page (Info / Blogs)
+
+* Contact Us with Inquiry Form
+
+* Bulk Order Option
+
+* Admin Access: Add/Remove Plants (reflected on UI)
+
+project structure 
+
+  client/          # React Frontend
+  ├── components/
+  ├── pages/
+  └── App.js
+server/          # Express Backend
+  ├── models/
+  ├── routes/
+  ├── controllers/
+  └── server.js
+
+neccessry steps:
+cd greenhouse
+cd server
+npm install
+
+cd ../client
+npm install
+run the app
+cd server
+npm start
+cd client
+npm start
+App runs on: http://localhost:3000
+
+dependencies required:
+verify in package.json
+Server
+1 express
+2 mongoose
+3cors
+4 bcryptjs
+5 jsonwebtoken
+6 multer
+
+Client
+
+1 react
+2 react-router-dom
+3 axios
+4 bootstrap
+
+
+
+
