@@ -1,0 +1,99 @@
+.video-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 240, 240);
+
+  text-align: center;
+}
+
+.video-text h1 {
+  position: absolute;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  margin: 5px 0 310px 0;
+  font-family: sans-serif;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.video-text i {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin: 10px 0 180px 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.btn {
+  position: relative;
+  background-color: #3d550c;
+  color: white;
+  border-bottom-right-radius: 10px;
+  border-width: 0px;
+  width: 200px;
+  height: 45px;
+
+  top: 20px;
+  right: 20px;
+  /* Distance from left */
+  margin: 0;
+  transition: transform 0.9s ease-in-out;
+}
+
+.btn:active {
+  transform: scale(1.25);
+  /* Slightly shrink the button on click */
+}
+
+.btn i {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 17px;
+}
+
+.video-fix {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .video-text h1 {
+    font-size: 2rem;
+    margin: 5px 0 200px 0;
+  }
+
+  .video-text i {
+    font-size: 1.2rem;
+    margin: 10px 0 120px 0;
+  }
+
+  .btn {
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .btn i {
+    font-size: 14px;
+  }
+
+  .video-text {
+    padding: 0 20px;
+  }
+   .btn {
+    position: static;
+    margin-top: 20px;
+  }
+}
